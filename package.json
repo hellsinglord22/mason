@@ -7,10 +7,13 @@
     "start": "src/mason.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["cli", "generate"],
+  "keywords": [
+    "cli",
+    "generate"
+  ],
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "command": "0.0.5"
+    "commander": "^2.15.1"
   }
 }
