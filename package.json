@@ -7,6 +7,9 @@
     "start": "src/mason.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "mason": "src/mason"
+  },
   "keywords": [
     "cli",
     "generate"
