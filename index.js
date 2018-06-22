@@ -4,7 +4,7 @@ const mason = require('commander');
 const { version } = require('./package.json');
 
 // commands
-const create = require('./commands/create');
+const create = require('./commands/create').default;
 const setup = require('./commands/setup');
 
 mason
