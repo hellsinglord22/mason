@@ -2,29 +2,17 @@
 
 const mason = require('commander');
 const { version } = require('./package.json');
+const { generate } = require('./commands');
 
-// commands
-const create = require('./commands/create').default;
-const setup = require('./commands/setup');
 
 mason
     .version(version);
 
-mason
-    .command('setup [env]')
-    .description('run setup commands for all envs')
-    .action(setup);
 
 mason
-    .command('create <ticketId>')
-    .description('creates a new game')
-    .action(create);
-
-mason
-    .command('*')
-    .action(() => {
-        mason.help();
-    });
+    .command('generate <supplierName>')
+    .description('Generate a supplier directory for hotel connect')
+    .action(generate);
 
 mason.parse(process.argv);
 
