@@ -1,4 +1,4 @@
-const engine = require('./engine');
+const engine = require('../engine');
 
 
 const generate = (supplierName) => {
@@ -8,4 +8,4 @@ const generate = (supplierName) => {
 
 };
 
-export default generate;
+module.exports = generate;

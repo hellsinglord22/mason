@@ -2,7 +2,7 @@
 
 const mason = require('commander');
 const { version } = require('./package.json');
-const { generate } = require('./commands');
+const { generate } = require('./src/commands');
 
 
 mason

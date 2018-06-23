@@ -1,4 +1,4 @@
-const generate = require('./generate').default;
+const generate = require('./generate');
 
 
 module.exports = {
