@@ -1,0 +1,27 @@
+/**
+ * <%= supplierPrefix %>Hotel
+ */
+export class <%= supplierPrefix %>HotelSearch {
+  /**
+   * Doing request in chunks, by default there will be only one chunk
+   * @param req
+   * @param res
+   * @param contractConfig
+   * @returns {Promise<Array>}
+   */
+  perform = async (req, res, contractConfig) => {};
+  /**
+   * creating supplier request and executing it
+   */
+  doChunkRequest = async ({ req, contractConfig, cacheId }) => {};
+
+  /**
+   * calling supplier api, to get results
+   */
+  runService = async ({ req, contractConfig, cacheId }) => {};
+
+  /**
+   * fetching results
+   */
+  fetch = async (req, res, contractConfig, { cid, ssrt }) => {};
+}

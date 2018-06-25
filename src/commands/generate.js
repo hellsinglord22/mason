@@ -1,9 +1,9 @@
 const engine = require('../engine');
 
 
-const generate = (supplierName) => {
+const generate = (supplierPrefix) => {
 
-    const generatedSupplier = engine.create(supplierName);
+    const generatedSupplier = engine.create({ supplierPrefix });
     console.log(generatedSupplier);
 
 };
